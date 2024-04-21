@@ -69,6 +69,8 @@ btnProcessar.addEventListener('click', () => {
   });
   output += `\nTotalizador Geral Dezenas: ${converterNumeroParaReal(totalizadorGeralDezenas)}`;
 
+  output += `\nTotalizador : ${converterNumeroParaReal(totalizadorGeralDezenas+totalizadorGeralGrupos)}`;
+
   txtOutput.value = output;
 })
 
