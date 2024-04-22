@@ -71,6 +71,8 @@ btnProcessar.addEventListener('click', () => {
 
   output += `\nTotalizador : ${converterNumeroParaReal(totalizadorGeralDezenas+totalizadorGeralGrupos)}`;
 
+  output += `\nComissão : ${converterNumeroParaReal((totalizadorGeralDezenas+totalizadorGeralGrupos)*0.15)}`;
+
   txtOutput.value = output;
 })
 
