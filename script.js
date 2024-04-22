@@ -79,7 +79,7 @@ btnProcessar.addEventListener('click', () => {
 
 function isolarGrupos(texto) {
   // const regex = /💰(.*?)(?=\n💰|$)/gs;
-  const regex = /💰(.*?)(?=\n💰|\n\nDEZENAS|\n\n*DEZENAS*|$)/gis;
+  const regex = /💰(.*?)(?=\n💰|\n\nDEZENAS|\n\n*DEZENAS*|\n\n*DEZENAS :*|$)/gis;
   let matches = [];
   let match;
   while ((match = regex.exec(texto)) !== null) {
